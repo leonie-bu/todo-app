@@ -1,0 +1,10 @@
+.positioning {
+  background-color: var(--clr-primary);
+  width: 8.92rem;
+  height: 7.5rem;
+  border-radius: 11px 0 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+}
