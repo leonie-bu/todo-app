@@ -1,0 +1,32 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 0.652rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 0.652rem;
+  font-weight: 300;
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
