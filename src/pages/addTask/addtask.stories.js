@@ -1,9 +1,9 @@
 import "./addtask.css";
-import addtask from "./positioning-button.html";
+import addtask from "./addtask.html";
 
 export default {
   title: "components/addTask",
   parameters: { layout: "fullscreen" },
 };
 
-export const addTask = () => addTask;
+export const addTask = () => addtask;
