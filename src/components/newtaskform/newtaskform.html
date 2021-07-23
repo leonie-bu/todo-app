@@ -1,0 +1,26 @@
+<form class="form">
+  <div class="form__textinput">
+    <label for="task" class="textinput__label">Enter Task </label>
+    <input type="text" id="task" class="textinput__input" />
+  </div>
+
+  <fieldset class="radiocontainer">
+    <legend>WHEN</legend>
+    <div class="radiocontainer__radiobtn">
+      <div>
+        <input type="radio" value="today" id="today" name="when" />
+        <label for="today">Today</label>
+      </div>
+      <div>
+        <input type="radio" value="tomorrow" id="tomorrow" name="when" />
+        <label for="Tomorrow">Tomorrow</label>
+      </div>
+      <div>
+        <input type="radio" value="selectdate" id="selectdate" name="when" />
+        <label for="selectdate">Select Date</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <button type="submit" class="btn">Add task</button>
+</form>
