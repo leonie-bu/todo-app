@@ -43,7 +43,7 @@
 legend {
   padding-bottom: 2.25rem;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-primary);
+  font-weight: var(--fw-primary-thin);
 }
 
 .radiocontainer__radiobtn {
@@ -51,7 +51,7 @@ legend {
   justify-content: space-around;
   align-content: center;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-primary);
+  font-weight: var(--fw-primary-thin);
   color: var(--clr-text-primary);
 }
 
@@ -60,7 +60,7 @@ legend {
   grid-column: 1/3;
   height: 2.25rem;
   background-color: var(--clr-primary);
-  color: var(--clr-content-passive);
+  color: white;
   border: none;
-  font-family: var(--fw-primary);
+  font-family: var(--fw-secondary);
 }
