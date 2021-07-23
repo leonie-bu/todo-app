@@ -1,26 +1,26 @@
 <form class="form">
-  <div class="form__form-control">
-    <label for="task">Enter Task</label>
-    <input type="text" id="task" />
+  <div class="form__textinput">
+    <label for="task" class="textinput__label">Enter Task </label>
+    <input type="text" id="task" class="textinput__input" />
   </div>
 
-  <fieldset>
-    <legend>When</legend>
-    <div class="radiocontainer">
-      <div class="radios">
+  <fieldset class="radiocontainer">
+    <legend>WHEN</legend>
+    <div class="radiocontainer__radiobtn">
+      <div>
         <input type="radio" value="today" id="today" />
         <label for="today">Today</label>
       </div>
-      <div class="radios">
+      <div>
         <input type="radio" value="tomorrow" id="tomorrow" />
-        <label for="tomorrow">Tomorrow</label>
+        <label for="Tomorrow">Tomorrow</label>
       </div>
-      <div class="radios">
-        <input type="radio" value="selectDate" id="selectDate" />
-        <label for="selectDate">Select Date</label>
+      <div>
+        <input type="radio" value="selectdate" id="selectdate" />
+        <label for="selectdate">Select Date</label>
       </div>
     </div>
   </fieldset>
 
-  <button class="submitbtn">Add task</button>
+  <button type="submit" class="btn">Add task</button>
 </form>
