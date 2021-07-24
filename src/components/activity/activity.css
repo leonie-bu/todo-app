@@ -1,0 +1,6 @@
+.containerActivity {
+  height: 70vh;
+  width: 80vw;
+  display: grid;
+  background: var(--clr-content-passive);
+}
