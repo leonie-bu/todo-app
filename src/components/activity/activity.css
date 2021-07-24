@@ -3,4 +3,17 @@
   width: 80vw;
   display: grid;
   background: var(--clr-content-passive);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-primary-thin);
+}
+
+.containerActivity input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.doneActivity {
+  text-decoration: line-through solid 2px var(--clr-primary);
 }
