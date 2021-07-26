@@ -13,7 +13,7 @@
   --clr-secondary: hsl(245, 71%, 22%);
   --clr-text-primary: hsl(0, 0%, 22%);
   --clr-text-secondary: hsl(0, 0%, 7%);
-  --clr-content-passive: hsl(0, 0%, 83%);
+  --clr-content-passive: #fbfbfb;
 }
 *,
 *::after,
