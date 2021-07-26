@@ -1,0 +1,30 @@
+.dateActivity {
+  background-color: whitesmoke;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-primary-thin);
+  color: var(--clr-content-passive);
+  height: 70vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+.dateActivity input {
+  opacity: 0;
+  size: 0;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--clr-primary);
+}
+
+/* Fragen
+- Unterschied align-items und align-content bei flexbox?
+- Wie kriege ich es hin, dass today, tomorrow und this week senkrecht zueinander stehen?
+- Komponente bewegen, sodass sie unten links ist?
+*/
