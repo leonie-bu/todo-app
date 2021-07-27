@@ -4,10 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  --clr-primary: #fe4775;
+  --clr-secondary: #161060;
+  --clr-text-primary: #393939;
+  --clr-text-secondary: #111;
+  --clr-text-passive: hsla(0, 0%, 0%, 0.55);
+  --clr-content-passive: #fbfbfb;
+  --fw-primary: 400;
+  --fw-secondary: 600;
+}
+
 .body {
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+.headerMenu {
+  display: grid;
+  padding: 1em;
+  grid-column: 1/3;
+  grid-auto-flow: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -23,6 +44,26 @@
 }
 
 .menuButton {
-  /* grid-column: 1/3 */
+  grid-column: 1/3;
   justify-self: start;
+}
+
+.dateSelector {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: span 2;
+  place-items: center;
+}
+
+.taskNavLink {
+  color: var(--clr-text-passive);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.taskNavLink--active {
+  color: var(--clr-primary);
 }
