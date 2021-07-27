@@ -3,3 +3,26 @@
 *::before {
   box-sizing: border-box;
 }
+
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.iconButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menuButton {
+  /*grid-column: 1/3*/
+  justify-self: start;
+}
