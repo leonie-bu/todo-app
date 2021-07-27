@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!--Überschrift: Menu Button, Notification Bell und Überschrift-->
+      <button aria-label="open menu" class="iconButton menuButton">
+        <img src="src/assets/Menu.svg" alt="Menu Button" />
+      </button>
+      <div class="headerMenu">
+        <h1>Tasks</h1>
+        <button aria-label="show notifications" class="iconButton">
+          <img src="src/assets/notificationBell.svg" alt="Notification Bell" />
+        </button>
+      </div>
+
+      <!--Terminauswahl in einer section-->
+      <section class="dateSelector">
+        <a href="#" class="taskNavLink">Today</a>
+        <a href="#" class="taskNavLink">Tomorrow</a>
+        <a href="#" class="taskNavLink">This Week</a>
+      </section>
+
+      <!--Die taskList mit den einzelnen TaskItems hinzufügen, auch in einer section-->
+      <section class="taskList">
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+      </section>
+      <button aria-label="Add a new task" class="actionButton">
+        <img src="src/assets/PlusSign.svg" alt="Plus sign to add a new task" />
+      </button>
+    </main>
+  </body>
+</html>
