@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* -- Body -- */
+.addTask {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+/* -- Enter Task -- */
+
+/* TO DO : styling with input type=text? */
+.input[type="text"] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+/* -- When: Today, Tomorrow and Select Date Part -- */
+.radiocontainer {
+  /* refers to When above the dates one can select */
+  color: #000;
+  border: none;
+}
+
+.radiocontainer__radiobtn {
+  /* refers to Today, Tomorrow and Select Date */
+  color: #393939;
+  background: #fbfbfb;
+  padding: 10px 15px 10px 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.radiobutton {
+  /* button disappears */
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* -- Add Task Button -- */
+.btn {
+  background-color: #fe4775;
+  color: white;
+  border: none;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
