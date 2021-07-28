@@ -1,3 +1,5 @@
+console.log("Hello");
+
 const menuButton = document.querySelector(".menuButton");
 menuButton.onclick = sendAlert;
 
@@ -16,10 +18,7 @@ const fromtodoTask = createTaskListItem(todoTask);
 // Whatever is in the fromtodoTask variable will be appended to the taskList (this is where all tasks are listed)
 taskList.append(fromtodoTask);
 
-//const taskOne = createTaskListItem("Kaffee kochen");
-//const taskTwo = createTaskListItem("Javascript lernen");
-
-function createTaskListItem(taskName) {
+function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
   const input = document.createElement("input");
   const span = document.createElement("span");
@@ -29,11 +28,16 @@ function createTaskListItem(taskName) {
   input.className = "taskItem__checkbox";
   input.type = "checkbox";
   input.setAttribute("name", "tasks");
+  input.checked = task.isDone; // durchstreichen
 
   span.className = "taskItem__labelText";
-  span.innerText = taskName;
+  span.innerText = task.title;
 
   taskListItem.append(input, span);
 
   return taskListItem;
 }
+
+// First exercise
+//const taskOne = createTaskListItem("Kaffee kochen");
+//const taskTwo = createTaskListItem("Javascript lernen");
