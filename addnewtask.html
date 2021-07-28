@@ -5,41 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AddNewTask</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="addTask">
-      <h1>Add new</h1>
-      <form class="form">
-        <div class="form__textinput">
-          <label for="task" class="textinput__label">Enter Task </label>
-          <input type="text" id="task" class="textinput__input" />
+    <main class="addTask__container">
+      <h1 class="addTask__headline">Add new</h1>
+      <form class="addTaskForm">
+        <section class="addTaskForm__userInput">
+          <label
+            ><span class="addTaskForm__description">Description</span
+            ><input
+              class="addTaskForm__textInput"
+              type="text"
+              name="description"
+              placeholder="Enter text"
+          /></label>
+          <fieldset class="addTaskForm__fieldset">
+            <legend class="addTaskForm__description">When</legend>
+            <div class="addTaskForm__radioGroup">
+              <label>
+                <input class="addTaskForm__radio" type="radio" name="when" />
+                <span class="addTaskForm__radioLabel">Today</span>
+              </label>
+              <label>
+                <input class="addTaskForm__radio" type="radio" name="when" />
+                <span class="addTaskForm__radioLabel">Tomorrow</span>
+              </label>
+              <label>
+                <input class="addTaskForm__radio" type="radio" name="when" />
+                <span class="addTaskForm__radioLabel">Select Date</span>
+              </label>
+            </div>
+          </fieldset>
+        </section>
+        <div>
+          <input class="addTaskForm__submit" type="submit" value="Add task" />
         </div>
-
-        <fieldset class="radiocontainer">
-          <legend>WHEN</legend>
-          <div class="radiocontainer__radiobtn">
-            <div>
-              <input type="radio" value="today" id="today" name="when" />
-              <label for="today">Today</label>
-            </div>
-            <div>
-              <input type="radio" value="tomorrow" id="tomorrow" name="when" />
-              <label for="tomorrow">Tomorrow</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                value="selectdate"
-                id="selectdate"
-                name="when"
-              />
-              <label for="selectdate">Select Date</label>
-            </div>
-          </div>
-        </fieldset>
-
-        <button type="submit" class="btn">Add task</button>
       </form>
-    </div>
+    </main>
   </body>
 </html>
