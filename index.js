@@ -1,3 +1,14 @@
+// Import
+
+import {
+  parseJSONFromLocalStorage,
+  stringifyJSONToLocalStorage,
+} from "/utilities/localStorage.js";
+
+stringifyJSONToLocalStorage("panda", "ist toll");
+parseJSONFromLocalStorage("panda", "xxx");
+console.log(parseJSONFromLocalStorage);
+
 console.log("Hello");
 
 const menuButton = document.querySelector(".menuButton");
@@ -22,22 +33,15 @@ const taskList = document.querySelector(".taskList");
 // 29. Juli: Arrays
 
 const tasks = [
-  { title: "Take a walk", 
-   date: "Today", 
-   isDone: false 
-  },
-  { title: "Have dinner", 
-   date: "Today", 
-   isDone: false 
-  },
-  { title: "Go running", 
-   date: "Tomorrow", 
-   isDone: false 
-  },
-  { title: "Relax", 
-   date: "Tomorrow", 
-   isDone: false 
-  },
+  { title: "Take a walk", date: "Today", isDone: false },
+  { title: "Have dinner", date: "Today", isDone: false },
+  { title: "Go running", date: "Tomorrow", isDone: false },
+  { title: "Relax", date: "Tomorrow", isDone: false },
+];
+
+const taskListItem = tasks.map((task) => createTaskListItem(task));
+
+taskList.append(...taskListItem);
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
@@ -58,7 +62,3 @@ function createTaskListItem(task) {
 
   return taskListItem;
 }
-
-// First exercise
-//const taskOne = createTaskListItem("Kaffee kochen");
-//const taskTwo = createTaskListItem("Javascript lernen");
