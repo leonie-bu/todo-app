@@ -21,9 +21,11 @@ form.onsubmit = function (event) {
   newTask.title = textInput.value;
   newTask.date = checkedDateInput.value;
 
-  const oldTask = parseJSONFromLocalStorage("tasks", []);
+  const oldTasks = parseJSONFromLocalStorage("tasks", []);
 
-  const tasks = [...oldTask, newTask];
+  const newTasks = [...oldTasks, newTask];
 
-  stringifyJSONToLocalStorage("tasks", tasks);
+  stringifyJSONToLocalStorage("tasks", newTasks);
+
+  location.href = "/";
 };
