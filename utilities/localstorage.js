@@ -1,4 +1,5 @@
 // Function to get something from local storage (parse)
+
 export function parseJSONFromLocalStorage(key, defaultValue) {
   const json = JSON.parse(localStorage.getItem(key));
 
