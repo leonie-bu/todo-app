@@ -1,3 +1,8 @@
+import {
+  parseJSONFromLocalStorage,
+  stringifyJSONToLocalStorage,
+} from "/utilities/localStorage.js";
+
 // Define what the form variable actually is
 const form = document.querySelector(".addTaskForm");
 
@@ -16,5 +21,11 @@ form.onsubmit = function (event) {
   newTask.title = textInput.value;
   newTask.date = checkedDateInput.value;
 
-  console.log(newTask, newTask.title, newTask.date);
+  const oldTasks = parseJSONFromLocalStorage("tasks", []);
+
+  const newTasks = [...oldTasks, newTask];
+
+  stringifyJSONToLocalStorage("tasks", newTasks);
+
+  location.href = "/";
 };
